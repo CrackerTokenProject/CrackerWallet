@@ -1,0 +1,45 @@
+# List of SDK dependencies of this app, this information is also included in an encrypted form in the APK.
+# For more information visit: https://d.android.com/r/tools/dependency-metadata
+
+library {
+  maven_library {
+    artifactId: "NativeGallery"
+  }
+  digests {
+    sha256: "\224\261nh8d\376\255u\377\303\366r@\242\301x\003\035\360\027\255\347\341{\206-39\246\217\337"
+  }
+}
+library {
+  maven_library {
+    artifactId: "com.candycoded.hapticfeedbacklibrary-release"
+  }
+  digests {
+    sha256: "\333\200\t\024\271\177\253p0\r\f\271\203\316\300F\3701\336J\216\223!\366\345<\273X9\317k\325"
+  }
+}
+library {
+  digests {
+    sha256: "t\332\004f\r\271G\332\277\322\350\315\264\021\2371\371\177\271\212\306\373\343\237\365RNrf\006?\313"
+  }
+}
+library {
+  digests {
+    sha256: "b\271\266\243\276v\355:\265<\240xAn\255H\341X\364\225\0330\316\330\344\320\316\337O0;\233"
+  }
+}
+library_dependencies {
+}
+library_dependencies {
+  library_index: 1
+}
+library_dependencies {
+  library_index: 2
+}
+library_dependencies {
+  library_index: 3
+}
+module_dependencies {
+  module_name: "base"
+  dependency_index: 2
+  dependency_index: 3
+}

@@ -1,0 +1,152 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player"
+5    android:versionCode="1"
+6    android:versionName="1.0.30" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml
+11
+12    <uses-feature android:glEsVersion="0x00030000" />
+12-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:19:3-52
+12-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:19:17-49
+13
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:20:3-65
+14-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:20:20-62
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:21:3-77
+15-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:21:20-74
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:22:3-63
+16-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:22:20-60
+17
+18    <uses-feature
+18-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:23:3-83
+19        android:name="android.hardware.camera"
+19-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:23:17-55
+20        android:required="false" />
+20-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:23:56-80
+21    <uses-feature
+21-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:24:3-93
+22        android:name="android.hardware.camera.autofocus"
+22-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:24:17-65
+23        android:required="false" />
+23-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:24:66-90
+24    <uses-feature
+24-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:25:3-89
+25        android:name="android.hardware.camera.front"
+25-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:25:17-61
+26        android:required="false" />
+26-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:25:62-86
+27
+28    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+28-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:26:3-79
+28-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:26:20-76
+29
+30    <uses-feature
+30-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:27:3-88
+31        android:name="android.hardware.touchscreen"
+31-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:27:17-60
+32        android:required="false" />
+32-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:27:61-85
+33    <uses-feature
+33-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:28:3-99
+34        android:name="android.hardware.touchscreen.multitouch"
+34-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:28:17-71
+35        android:required="false" />
+35-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:28:72-96
+36    <uses-feature
+36-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:29:3-108
+37        android:name="android.hardware.touchscreen.multitouch.distinct"
+37-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:29:17-80
+38        android:required="false" />
+38-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:29:81-105
+39
+40    <application
+40-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:3:3-18:17
+41        android:extractNativeLibs="true"
+41-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:3:16-48
+42        android:isGame="true" >
+42-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:3:49-70
+43        <activity
+43-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:5-12:16
+44            android:name="com.unity3d.player.UnityPlayerActivity"
+44-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:15-68
+45            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+45-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:184-365
+46            android:hardwareAccelerated="false"
+46-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:401-436
+47            android:launchMode="singleTask"
+47-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:152-183
+48            android:resizeableActivity="false"
+48-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:366-400
+49            android:screenOrientation="userPortrait"
+49-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:111-151
+50            android:theme="@style/UnityThemeSelector" >
+50-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:4:69-110
+51            <intent-filter>
+51-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:5:7-9:23
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:6:9-61
+52-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:6:17-58
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:7:9-69
+54-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:7:19-66
+55                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+55-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:8:9-78
+55-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:8:19-75
+56            </intent-filter>
+57
+58            <meta-data
+58-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:10:7-82
+59                android:name="unityplayer.UnityActivity"
+59-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:10:18-58
+60                android:value="true" />
+60-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:10:59-79
+61            <meta-data
+61-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:11:7-78
+62                android:name="android.notch_support"
+62-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:11:18-54
+63                android:value="true" />
+63-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:11:55-75
+64        </activity>
+65
+66        <meta-data
+66-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:13:5-69
+67            android:name="unity.splash-mode"
+67-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:13:16-48
+68            android:value="0" />
+68-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:13:49-66
+69        <meta-data
+69-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:14:5-74
+70            android:name="unity.splash-enable"
+70-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:14:16-50
+71            android:value="True" />
+71-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:14:51-71
+72        <meta-data
+72-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:15:5-78
+73            android:name="unity.launch-fullscreen"
+73-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:15:16-54
+74            android:value="True" />
+74-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:15:55-75
+75        <meta-data
+75-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:16:5-84
+76            android:name="unity.allow-resizable-window"
+76-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:16:16-59
+77            android:value="False" />
+77-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:16:60-81
+78        <meta-data
+78-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:17:5-81
+79            android:name="notch.config"
+79-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:17:16-43
+80            android:value="portrait|landscape" />
+80-->/Users/quiqqy/Desktop/crackerAPP/Build/unityLibrary/src/main/AndroidManifest.xml:17:44-78
+81    </application>
+82
+83</manifest>
