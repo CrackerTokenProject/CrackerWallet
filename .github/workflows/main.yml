@@ -48,7 +48,7 @@ jobs:
         uses: game-ci/unity-builder@v2
         with:
           projectPath: test-projects/test-project
-          targetPlatform: WebGL
+          targetPlatform: Android
 
       # Output
       - uses: actions/upload-artifact@v2
