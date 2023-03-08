@@ -1,28 +1,38 @@
-name: Android Build
-on:
-  workflow_dispatch: {}
+name: Build project
+
+on: [push, pull_request]
+
 jobs:
-  activation:
-    name: Build Unity Android
+  buildForAllSupportedPlatforms:
+    name: Build for ${{ matrix.targetPlatform }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        targetPlatform:
+          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+          - StandaloneWindows # Build a Windows standalone.
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - StandaloneLinux64 # Build a Linux 64-bit standalone.
+          - iOS # Build an iOS player.
+          - Android # Build an Android .apk standalone app.
+          - WebGL # WebGL.
     steps:
-    - name: Checkout project
-      uses: actions/checkout@v2
-
-    - name: Setup Unity
-      uses: kuler90/setup-unity@v1
-      with:
-        unity-modules: android
-
-    - name: Activate Unity
-      uses: kuler90/activate-unity@v1
-      with:
-        unity-username: ${{ secrets.UNITY_USERNAME }}
-        unity-password: ${{ secrets.UNITY_PASSWORD }}
-        unity-authenticator-key: ${{ secrets.UNITY_AUTHENTICATOR_KEY }}
-
-    - name: Build Unity
-      uses: kuler90/build-unity@v1
-      with:
-        build-target: Android
-        build-path: ./build.apk
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: true
+      - uses: actions/cache@v2
+        with:
+          path: Library
+          key: Library-${{ matrix.targetPlatform }}
+          restore-keys: Library-
+      - uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          targetPlatform: ${{ matrix.targetPlatform }}
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build-${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
